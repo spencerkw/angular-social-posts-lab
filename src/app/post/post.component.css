@@ -11,6 +11,19 @@
   border-bottom: 1px solid lightgray;
 }
 
+.upvote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 10px;
+}
+
+.upvote-button, .upvote-count {
+  margin: 5px 0;
+}
+
 .post-content {
   flex: 1;
 }

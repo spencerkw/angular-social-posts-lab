@@ -12,23 +12,28 @@ export class SocialPostsComponent {
   posts: Post[] = [
     {
       subject: "hey",
-      body: "what's up"
+      body: "what's up",
+      upvotes: 0
     },
     {
       subject: "wow",
-      body: "wowie zowie"
+      body: "wowie zowie",
+      upvotes: 0
     },
     {
       subject: "neat",
-      body: "neat"
+      body: "neat",
+      upvotes: 0
     },
     {
       subject: "lol",
-      body: "big mood"
+      body: "big mood",
+      upvotes: 0
     },
     {
       subject: "cancelled",
-      body: "get out"
+      body: "get out",
+      upvotes: 0
     }
   ];
 

@@ -18,4 +18,8 @@ export class PostComponent {
     this.onRemovePost.emit();
   }
 
+  upvote(): void {
+    this.post.upvotes++;
+  }
+
 }

@@ -1,4 +1,8 @@
 <div class="post-container">
+  <div class="upvote-container">
+    <button class="upvote-button" (click)="upvote()"><i class="material-icons">arrow_upward</i></button>
+    <p class="upvote-count">{{post.upvotes}}</p>
+  </div>
   <div class="post-content">
     <h4 class="subject">{{post.subject}}</h4>
     <p class="body">{{post.body}}</p>

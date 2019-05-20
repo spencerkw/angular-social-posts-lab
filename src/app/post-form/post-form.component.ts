@@ -14,7 +14,8 @@ export class PostFormComponent {
   submitPost(form) {
     this.submitted.emit({
       subject: form.value.subject,
-      body: form.value.body
+      body: form.value.body,
+      upvotes: 0
     });
     form.resetForm();
   }
