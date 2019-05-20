@@ -1,3 +1,7 @@
-<p>
-  post works!
-</p>
+<div class="post-container">
+  <div class="post-content">
+    <h4>{{post.subject}}</h4>
+    <p>{{post.body}}</p>
+  </div>
+  <button (click)="removePost()">Remove</button>
+</div>

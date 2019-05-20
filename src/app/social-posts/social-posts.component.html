@@ -3,6 +3,11 @@
   <button (click)="toggleForm()">New Thought</button>
   <post-form *ngIf="formShowing" (submitted)="onSubmit($event)"></post-form>
   <section class="posts-list">
-    <post *ngFor="let post of posts; index as i" (onRemovePost)="removePost($event)"></post>
+    <post
+      *ngFor="let post of posts; index as i"
+      (onRemovePost)="removePost($event)"
+      [post]="post"
+      [index]="i">
+    </post>
   </section>
 </main>

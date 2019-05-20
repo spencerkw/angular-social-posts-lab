@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Post } from '../post';
 
 @Component({
-  selector: 'app-post',
+  selector: 'post',
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css']
 })
-export class PostComponent implements OnInit {
+export class PostComponent {
+
+  @Input() post: Post;
+  @Input() index: number;
+
+  @Output() onRemovePost = new EventEmitter<any>();
 
   constructor() { }
 
-  ngOnInit() {
+  removePost(): void {
+    this.onRemovePost.emit(this.index);
   }
 
 }
