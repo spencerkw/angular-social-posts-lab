@@ -9,14 +9,13 @@ import { Post } from '../post';
 export class PostComponent {
 
   @Input() post: Post;
-  @Input() index: number;
 
   @Output() onRemovePost = new EventEmitter<any>();
 
   constructor() { }
 
   removePost(): void {
-    this.onRemovePost.emit(this.index);
+    this.onRemovePost.emit();
   }
 
 }
