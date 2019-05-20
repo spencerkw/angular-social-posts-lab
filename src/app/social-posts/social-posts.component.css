@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Dosis');
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 5px;
+  padding: 10px;
+
+  font-family: "Dosis", sans-serif;
+}
+
+h1 {
+  font-family: "Homemade Apple", cursive;
+  color: rgb(3, 169, 244);
+  font-size: 2.25rem;
+  margin: 10px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+
+  font-family: inherit;
+  border-radius: inherit;
+
+  min-width: 60%;
+}
+
+.content-container>* {
+  margin: 10px 0;
+}
+
+button, .posts-list {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+
+  border-radius: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 40px;
+}

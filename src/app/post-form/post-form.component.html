@@ -1,7 +1,9 @@
+<div class="form-container">
 <form #postForm="ngForm" (ngSubmit)="submitPost(postForm)">
   <label for="post-subject">Title</label>
-  <input id="post-subject" type="text" name="subject" ngModel>
+  <input id="post-subject" type="text" placeholder="Post title" name="subject" ngModel>
   <label for="post-body">Thought</label>
   <textarea id="post-body" name="body" rows="10" ngModel></textarea>
   <button>Add Post</button>
 </form>
+</div>
