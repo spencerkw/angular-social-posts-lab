@@ -37,17 +37,20 @@ export class SocialPostsComponent {
 
   constructor() { }
 
+  //handle when a post is submitted
   onSubmit(post: Post): void {
     console.log(post);
     this.posts.push(post); //add the post to the array
     this.formShowing = false; //remove the form after
   }
 
+  //remove the post at the given index
   removePost(index: number): void {
     console.log(index);
     this.posts.splice(index, 1); //remove the post from the array
   }
 
+  //toggle if the form should show
   toggleForm(): void {
     this.formShowing = !this.formShowing;
   }
