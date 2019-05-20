@@ -1,3 +1,8 @@
-<p>
-  social-posts works!
-</p>
+<main>
+  <h1>My Thoughts</h1>
+  <button (click)="toggleForm()">New Thought</button>
+  <post-form *ngIf="formShowing"></post-form>
+  <section class="posts-list">
+    <post *ngFor="let post of posts; index as i"></post>
+  </section>
+</main>
